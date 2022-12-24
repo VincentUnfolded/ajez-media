@@ -1,63 +1,112 @@
-import { motion } from "framer-motion";
+import { Timeline } from "flowbite-react";
 import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 function Approach() {
+  const [ref, inView] = useInView();
   const [ref1, inView1] = useInView();
   const [ref2, inView2] = useInView();
+  const [ref3, inView3] = useInView();
+  const [ref4, inView4] = useInView();
+
   return (
-    <div class='bg-slate-900 mt-12 py-24 pb-6 sm:pb-8 lg:pb-12'>
-      <div class='max-w-screen-2xl px-4 md:px-8 mx-auto'>
-        <section class='flex flex-col lg:flex-row justify-between gap-6 sm:gap-10 md:gap-16'>
+    <section className='bg-approach dark:bg-approach-dark min-h-xl p-12 flex flex-col items-center'>
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -20 }}
+        transition={{ duration: 1 }}
+      >
+        <h1 className='text-center text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white mb-2'>
+          What We Do
+        </h1>
+        <p className='text-center max-w-5xl text-lg font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400'>
+          Our approach can be broken down into 4 steps, research, plan, target,
+          and launch. These 4 steps ensure that we make custom, efficient and
+          profitable advertising:
+        </p>
+      </motion.div>
+      <div>
+        <Timeline className='max-w-5xl'>
           <motion.div
             ref={ref1}
             initial={{ opacity: 0, x: -100 }}
-            animate={inView1 ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
-            transition={{ duration: 0.5, delay: 1 }}
-            class='xl:w-5/12 flex flex-col justify-center sm:text-center lg:text-left lg:py-12 xl:py-24'
+            animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : -100 }}
+            transition={{ duration: 1 }}
           >
-            <h2 class='text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-200 mb-8'>
-              Our Approach
-            </h2>
-            <div className='text-lg text-justify text-slate-200 mt-8'>
-              <p>What we do is very simple:</p>
-              <p class='  mt-4'>
-                We first study your audience to deeply understand their
-                interests, behaviors, motivators and emotional drivers.
-              </p>
-              <p class='mt-4'>
-                Based on this data we work on your messaging by coming up with
-                the best angles and hooks to use on your advertising campaigns.
-              </p>
-              <p class='mt-4'>
-                We then find the best interests and keywords to target on
-                Facebook and Google in order to reach your exact target
-                audience.
-              </p>
-              <p class=' mt-4'>
-                {
-                  "Once that's done, we launch your advertising campaign with said assets and deploy our proprietary camapign strategy to ensure you get the best result out of every dollar that you invest."
-                }
-              </p>
-            </div>
+            <Timeline.Item>
+              <Timeline.Point />
+              <Timeline.Content>
+                <Timeline.Time>Step 1</Timeline.Time>
+                <Timeline.Title>Research</Timeline.Title>
+                <Timeline.Body>
+                  We first study your audience to deeply understand their
+                  interests, behaviors, motivators and emotional drivers.
+                </Timeline.Body>
+              </Timeline.Content>
+            </Timeline.Item>
           </motion.div>
-
           <motion.div
             ref={ref2}
-            initial={{ opacity: 0, x: 100 }}
-            animate={inView2 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
-            transition={{ duration: 0.5, delay: 1 }}
-            class='xl:w-5/12 h-48 lg:h-auto bg-gray-100 overflow-hidden shadow-lg rounded-lg'
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: inView2 ? 1 : 0, x: inView2 ? 0 : -100 }}
+            transition={{ duration: 1 }}
           >
-            <img
-              src='https://images.unsplash.com/photo-1585250003309-694ff34512d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
-              loading='lazy'
-              alt='Photo by Pixabay from Pexels'
-              class='w-full h-full object-cover object-center'
-            />
+            <Timeline.Item>
+              <Timeline.Point />
+              <Timeline.Content>
+                <Timeline.Time>Step 2</Timeline.Time>
+                <Timeline.Title>Plan</Timeline.Title>
+                <Timeline.Body>
+                  Based on the researched data we work on your messaging by
+                  coming up with the best angles and hooks to use on your
+                  advertising campaigns.
+                </Timeline.Body>
+              </Timeline.Content>
+            </Timeline.Item>
           </motion.div>
-        </section>
+          <motion.div
+            ref={ref3}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: inView3 ? 1 : 0, x: inView3 ? 0 : -100 }}
+            transition={{ duration: 1 }}
+          >
+            <Timeline.Item>
+              <Timeline.Point />
+              <Timeline.Content>
+                <Timeline.Time>Step 3</Timeline.Time>
+                <Timeline.Title>Target</Timeline.Title>
+                <Timeline.Body>
+                  We then find the best interests and keywords to target on
+                  Facebook and Google in order to reach your exact target
+                  audience.
+                </Timeline.Body>
+              </Timeline.Content>
+            </Timeline.Item>
+          </motion.div>
+          <motion.div
+            ref={ref4}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: inView4 ? 1 : 0, x: inView4 ? 0 : -100 }}
+            transition={{ duration: 1 }}
+          >
+            <Timeline.Item>
+              <Timeline.Point />
+              <Timeline.Content>
+                <Timeline.Time>Step 4</Timeline.Time>
+                <Timeline.Title>Launch!</Timeline.Title>
+                <Timeline.Body>
+                  Once {" that's "} done, we launch your advertising campaign
+                  with said assets and deploy our proprietary camapign strategy
+                  to ensure you get the best result out of every dollar that you
+                  invest.
+                </Timeline.Body>
+              </Timeline.Content>
+            </Timeline.Item>
+          </motion.div>
+        </Timeline>
       </div>
-    </div>
+    </section>
   );
 }
 
