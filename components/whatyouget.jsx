@@ -40,7 +40,7 @@ function WhatYouGet() {
           />
           <Card
             title='Brand Exposure'
-            description='We use well-researched data to put your brand in front of the correct audience and increase your chances of getting leads.'
+            description='We use well-researched data to put your brand in front of the correct audience, with the correct interests and the correct needs. That way, we significantly increase your sales, brand growth and profits.'
             icon={
               <Player
                 autoplay
@@ -51,7 +51,7 @@ function WhatYouGet() {
           />
           <Card
             title='Ads That Convert'
-            description='We use the latest techniques to create ads that convert and get you more leads.'
+            description='We use the latest techniques to create ads that engage, convert and sell astoundingly.'
             icon={
               <Player
                 autoplay
