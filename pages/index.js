@@ -1,3 +1,4 @@
+/* eslint-disable react/no-string-refs */
 import Head from "next/head";
 import Approach from "../components/approach";
 import BookACall from "../components/bookACall";
@@ -25,6 +26,7 @@ function App() {
         <meta name='twitter:site' content='@ajezmedia' />
         <meta name='twitter:creator' content='@ajezmedia' />
         <meta name='twitter:title' content='Ajez Media' />
+        <link ref='icon' href='iconDark.svg' />
       </Head>
       <main
         className='min-h-screen 

@@ -25,7 +25,7 @@ function Footer() {
           Ajez Media
         </Link>
         <p class='my-6 text-gray-500 dark:text-gray-400'>
-          Generating leads for your business in real time.
+          Generating sales for your business in real time.
         </p>
         <span class='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
           © 2022{" "}
