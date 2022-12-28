@@ -15,10 +15,10 @@ function WhatYouGet() {
         transition={{ duration: 1 }}
       >
         <h1 className='text-center text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white mb-2'>
-          What You Get
+          What We Offer
         </h1>
         <p className='text-center max-w-5xl text-lg font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 mb-8'>
-          Our services ensure that you get the best results from your ads:
+          Ajez Media guarantees results.
         </p>
       </motion.div>
       <div className='flex flex-col justify-center grow mt-16'>
@@ -28,37 +28,16 @@ function WhatYouGet() {
         '
         >
           <Card
-            title='Engagement'
-            description='We use special techniques to increase your engagement and grow your audience.'
-            icon={
-              <Player
-                autoplay
-                loop
-                src='https://assets1.lottiefiles.com/packages/lf20_dyimsq5i.json'
-              />
-            }
+            title='ROI Focused'
+            description="We're not just any old social media agency, we're an ROI-focused one. We'll get you real results by providing a personalized marketing strategy and copywriting tailored to your business goals."
           />
           <Card
-            title='Brand Exposure'
-            description='We use well-researched data to put your brand in front of the correct audience, with the correct interests and the correct needs. That way, we significantly increase your sales, brand growth and profits.'
-            icon={
-              <Player
-                autoplay
-                loop
-                src='https://assets9.lottiefiles.com/packages/lf20_5tl1xxnz.json'
-              />
-            }
+            title='Optimized Ads'
+            description="Whether it's through our Facebook advertising services or content management services, we'll help you optimize your advertising and web presence so that you can grow with your customers."
           />
           <Card
-            title='Ads That Convert'
-            description='We use the latest techniques to create ads that engage, convert and sell astoundingly.'
-            icon={
-              <Player
-                autoplay
-                loop
-                src='https://assets2.lottiefiles.com/packages/lf20_n4uytpvo.json'
-              />
-            }
+            title='No hidden fees or catches'
+            description="You won't be charged any hidden fees or surprises with our service. Our rates are all-inclusive and we offer a clear breakdown of what we deliver and how much it costs upfront."
           />
         </div>
       </div>

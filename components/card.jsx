@@ -18,9 +18,9 @@ function Card(props) {
         className
       }
     >
-      <div className='grow p-6 flex justify-center items-center'>
-        {icon}
-      </div>
+      {icon && (
+        <div className='grow p-6 flex justify-center items-center'>{icon}</div>
+      )}
       <div className='p-5'>
         <h5 className='w-full text-left mb-2 text-2xl font-bold tracking-tight text-slate-800 dark:text-white'>
           {title}
