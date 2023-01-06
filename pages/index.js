@@ -26,7 +26,7 @@ function App() {
         <meta name='twitter:site' content='@ajezmedia' />
         <meta name='twitter:creator' content='@ajezmedia' />
         <meta name='twitter:title' content='Ajez Media' />
-        <link ref='icon' href='favicon.png' />
+        <link ref='icon' href='/favicon.png' />
       </Head>
       <main
         className='min-h-screen 
