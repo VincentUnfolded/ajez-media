@@ -6,10 +6,7 @@ function BookACall() {
   const [ref, inView] = useInView();
 
   return (
-    <section
-      id='book-a-call'
-      className='min-h-full bg-approach dark:bg-approach-dark flex flex-col justify-center'
-    >
+    <section id='book-a-call' className='min-h-full'>
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 100 }}
@@ -20,6 +17,7 @@ function BookACall() {
           url='https://calendly.com/ajez-media/strategy-call'
           styles={{
             height: "100vh",
+            width: "100%",
             margin: "0 auto",
             border: "none",
             overflow: "hidden",
