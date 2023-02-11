@@ -58,8 +58,8 @@ function Schedule() {
                   with Funnels & Paid Advertising.
                   <br />
                   <br />
-                  Find a time on {"Vincent's"} calendar to schedule your call
-                  today and we look forward to speaking to you soon!
+                  Find a time on {"Adil's"} calendar to schedule your call today
+                  and we look forward to speaking to you soon!
                   <br />
                   <br />
                   <h1 class='max-w-2xl mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl dark:text-slate-300'>
