@@ -49,7 +49,7 @@ function Schedule() {
                   />
                 </picture>
                 <h1 class='max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white'>
-                  Free 15-Minute Demo Call
+                  Free 30-Minute Strategy Session
                 </h1>
                 <p class='max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400'>
                   By the end of this Audit call, you will have a clear
@@ -67,21 +67,19 @@ function Schedule() {
                   </h1>
                   <ul class='list-disc list-outside text-gray-500 dark:text-gray-400'>
                     <li>
-                      Businesses looking to convert their current website into a
-                      high quality & streamlined funnel format.
+                      Real Estate agents looking to convert their current
+                      website into a high quality & streamlined funnel format.
                     </li>
                     <li>
-                      Businesses looking to take their offline business online
-                      Businesses looking to understand their increased revenue
-                      potential with funnels & conversion rate optimization.
+                      Real Estate agents looking to take their offline business
+                      online Real Estate agents looking to understand their
+                      increased revenue potential with funnels & conversion rate
+                      optimization.
                     </li>
+
                     <li>
-                      Businesses looking to maximize their conversion rates &
-                      verage order value.
-                    </li>
-                    <li>
-                      Businesses looking for a reliable agency that can make
-                      their company a priority.
+                      Real Estate agents looking for a reliable agency that can
+                      make their company a priority.
                     </li>
                   </ul>
                 </p>
